@@ -11,11 +11,12 @@
  * @param {[id: string]} req.params
  * @param {CbServer.Resp} resp
  *
- * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} TeardownParams
+ * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} InstallParams
  */
 
-function {{component_prefix}}_teardown(req, resp) {
+function sat_install(req, resp) {
   const params = req.params;
-  //component teardown behavior here. Undo any setup done in the setup service
+  const mfe_settings = params.mfe_settings;
+  //component install behavior here. Initialize an instance of the component for use
   resp.success('Success');
 }

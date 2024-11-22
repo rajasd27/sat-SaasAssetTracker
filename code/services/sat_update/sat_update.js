@@ -11,11 +11,11 @@
  * @param {[id: string]} req.params
  * @param {CbServer.Resp} resp
  *
- * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} UninstallParams
+ * @typedef {{prefix: string, entity_id: string, component_id: string, mfe_settings: Record<string, unknown>}} UpdateParams
  */
 
-function {{component_prefix}}_uninstall(req, resp) {
+function sat_update(req, resp) {
   const params = req.params;
-  //component uninstall behavior here, undo any steps done in the install service
+  //component update behavior here. Allow the user to update an instance of the component
   resp.success('Success');
 }
