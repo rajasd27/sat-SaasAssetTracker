@@ -17,23 +17,23 @@
         "CodeServices": [
             {
                 "Level": 1,
-                "Name": "{{component_prefix}}_install"
+                "Name": "sat_install"
             },
             {
                 "Level": 1,
-                "Name": "{{component_prefix}}_setup"
+                "Name": "sat_setup"
             },
             {
                 "Level": 1,
-                "Name": "{{component_prefix}}_teardown"
+                "Name": "sat_teardown"
             },
             {
                 "Level": 1,
-                "Name": "{{component_prefix}}_uninstall"
+                "Name": "sat_uninstall"
             },
             {
                 "Level": 1,
-                "Name": "{{component_prefix}}_update"
+                "Name": "sat_update"
             }
         ],
         "Collections": [],
